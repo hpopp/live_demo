@@ -8,10 +8,8 @@ defmodule LiveWeb.RoomChannel do
   end
 
   def handle_in("inc", _params, socket) do
-    for _x <- 1..10_000_000 do
-      Live.Counter.inc()
-      broadcast_update(socket)
-    end
+    Live.Counter.inc()
+    broadcast_update(socket)
 
     {:noreply, socket}
   end
