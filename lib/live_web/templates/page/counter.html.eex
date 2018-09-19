@@ -1,0 +1,5 @@
+<div id="container" class="container">
+  <h1>Count is <%= @count %></h1>
+  <div class="inc btn btn-primary">Inc</div>
+  <div class="dec btn btn-primary">Dec</div>
+</div>
